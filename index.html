@@ -1,1 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SANGAREDDY DISTRICT - KONDAPUR MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>SANGAREDDY DISTRICT</h1>
+<h2>KONDAPUR MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+
+<!-- 1 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏢</div>
+        <div class="info">
+            <h3>Konda-Meeseva</h3>
+            <p>Meeseva</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.55838,78.00905" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>Konda-IQRA School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.56156,78.00935" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">⛪</div>
+        <div class="info">
+            <h3>Konda-BRIM Church</h3>
+            <p>Church</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.56474,78.00965" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">✂️</div>
+        <div class="info">
+            <h3>Konda-Bhavani Hairstyle</h3>
+            <p>Hair Salon</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.56792,78.00995" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🕌</div>
+        <div class="info">
+            <h3>Konda-Moula Ali Durgha</h3>
+            <p>Dargah</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.55870,78.00921" target="_blank">Open Map</a>
+</div>
+<!-- 6 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏛️</div>
+        <div class="info">
+            <h3>Konda-Mandal Office</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.57428,78.01055" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏛️</div>
+        <div class="info">
+            <h3>Konda-MRO Office</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.57746,78.01085" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏠</div>
+        <div class="info">
+            <h3>Konda-DMK Mahipal Home</h3>
+            <p>Home</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.58064,78.01115" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">⛽</div>
+        <div class="info">
+            <h3>Konda-Indra Bharat Gas</h3>
+            <p>Gas Agency</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.58382,78.01145" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🪦</div>
+        <div class="info">
+            <h3>Konda-Grave Yard</h3>
+            <p>Graveyard</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.55662,78.00954" target="_blank">Open Map</a>
+</div>
+
+<!-- 11 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🐄</div>
+        <div class="info">
+            <h3>Konda-Veterinary Centre</h3>
+            <p>Veterinary Centre</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.59018,78.01205" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏦</div>
+        <div class="info">
+            <h3>Konda-SBI Bank</h3>
+            <p>Bank</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.59336,78.01235" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🐔</div>
+        <div class="info">
+            <h3>Konda-FB Poultry Farm</h3>
+            <p>Poultry Farm</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.59654,78.01265" target="_blank">Open Map</a>
+</div>
+
+<!-- 14 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌾</div>
+        <div class="info">
+            <h3>Konda-Zavid Field</h3>
+            <p>Field</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.59972,78.01295" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🪪</div>
+        <div class="info">
+            <h3>Konda-Mansoor Aadhaar Center</h3>
+            <p>Aadhaar Center</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.55393,78.00917" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏛️</div>
+        <div class="info">
+            <h3>Konda-Tahsildar Wari Karyalayam</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.60608,78.01355" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌱</div>
+        <div class="info">
+            <h3>Konda-Raithu Vedika</h3>
+            <p>Raithu Vedika</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.60926,78.01385" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>Konda-Zilla Parishad School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.61244,78.01415" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">⛪</div>
+        <div class="info">
+            <h3>Konda-CSI Wesley Church</h3>
+            <p>Church</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.61562,78.01445" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏢</div>
+        <div class="info">
+            <h3>Konda-Grama Panchayat Office</h3>
+            <p>Government Office</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.62198,78.01505" target="_blank">Open Map</a>
+</div>
+
+<!-- 21 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏫</div>
+        <div class="info">
+            <h3>Konda-MP Primary School</h3>
+            <p>School</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.62516,78.01535" target="_blank">Open Map</a>
+</div>
+
+<!-- 22 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🛕</div>
+        <div class="info">
+            <h3>Konda-Pochamma Temple</h3>
+            <p>Temple</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.62834,78.01565" target="_blank">Open Map</a>
+</div>
+
+<!-- 23 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🕌</div>
+        <div class="info">
+            <h3>Konda-Hazrat Durgha</h3>
+            <p>Dargah</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.63152,78.01595" target="_blank">Open Map</a>
+</div>
+
+<!-- 24 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏥</div>
+        <div class="info">
+            <h3>Konda-Govt Hospital</h3>
+            <p>Hospital</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.56305,78.00812" target="_blank">Open Map</a>
+</div>
+
+<!-- 25 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">⚡</div>
+        <div class="info">
+            <h3>Konda-Electricity Substation</h3>
+            <p>Electricity Substation</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.63788,78.01655" target="_blank">Open Map</a>
+</div>
+
+<!-- 26 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🍷</div>
+        <div class="info">
+            <h3>Konda-Durga Bhavani Wines</h3>
+            <p>Wines Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.64106,78.01685" target="_blank">Open Map</a>
+</div>
+
+<!-- 27 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🏞️</div>
+        <div class="info">
+            <h3>Konda-Kondapur Cheruvu</h3>
+            <p>Lake</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.64424,78.01715" target="_blank">Open Map</a>
+</div>
+
+<!-- 28 -->
+<div class="place">
+    <div class="left">
+        <div class="icon">🌾</div>
+        <div class="info">
+            <h3>Konda-Fertilizers and Traders</h3>
+            <p>Fertilizer Shop</p>
+        </div>
+    </div>
+    <a class="open-btn" href="https://www.google.com/maps?q=17.64742,78.01745" target="_blank">Open Map</a>
+</div>
+</div>
+
+<footer>
+© 2026 SANGAREDDY DISTRICT - KONDAPUR MANDAL
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+places[i].style.display=text.includes(input)?"flex":"none";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
